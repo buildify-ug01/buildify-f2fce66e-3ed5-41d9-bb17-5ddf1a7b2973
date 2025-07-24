@@ -11,7 +11,9 @@ import {
   HardHat, 
   BarChart3, 
   Settings, 
-  LogOut 
+  LogOut,
+  Pickaxe,
+  Users
 } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 
@@ -29,6 +31,16 @@ export default function Sidebar({ open, setOpen }: SidebarProps) {
       name: "Dashboard",
       path: "/dashboard",
       icon: LayoutDashboard,
+    },
+    {
+      name: "Mine",
+      path: "/mine",
+      icon: Pickaxe,
+    },
+    {
+      name: "Referrals",
+      path: "/referrals",
+      icon: Users,
     },
     {
       name: "Inventory",

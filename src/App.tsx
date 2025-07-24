@@ -9,6 +9,8 @@ import Reports from "./pages/Reports";
 import Profile from "./pages/Profile";
 import Admin from "./pages/Admin";
 import Equipment from "./pages/Equipment";
+import Mine from "./pages/Mine";
+import Referrals from "./pages/Referrals";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ForgotPassword from "./pages/ForgotPassword";
@@ -28,6 +30,9 @@ function App() {
           {/* Protected routes */}
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="mine" element={<Mine />} />
+            <Route path="referrals" element={<Referrals />} />
             <Route path="inventory" element={<Inventory />} />
             <Route path="equipment" element={<Equipment />} />
             <Route path="maintenance" element={<Maintenance />} />
